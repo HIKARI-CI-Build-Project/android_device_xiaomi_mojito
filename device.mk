@@ -67,6 +67,11 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Sensor
 TARGET_ENABLE_MULTI_SENSOR := true
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
