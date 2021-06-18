@@ -48,6 +48,10 @@ TARGET_ENABLE_AUDIO_ULL := true
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Bloatware
+PRODUCT_PACKAGES += \
+    GalleryGo
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
@@ -70,7 +74,6 @@ TARGET_ENABLE_MULTI_SENSOR := true
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
-
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
